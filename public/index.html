@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <script src="/public/index.js" defer></script>
+    <title>Submit Your Feedback</title>
+</head>
+<body>
+    <form action="/" method="POST" id="feedback-form" enctype="multipart/form-data">
+        <div class="container">
+            <h1>Give feedback</h1>
+            <p>Your thoughts are valuable in helping improve our products and services.</p>
+
+            <textarea name="text" id="feedback-text-area" maxlength="500" placeholder="Let us know what's on your mind" autofocus required></textarea>
+            <br>
+
+            <div class="input-containers">
+                <input type="checkbox" name="privacyCheckbox" value="checked" id="privacy-checkbox">
+                <label for="contact-checkbox1">I may be contacted about this feeback. See our <a href="#">privacy policy.</a></label>
+            </div>
+
+            <div class="input-containers">
+                <input type="checkbox" name="researchCheckbox" value="checked" id="research-checkbox">
+                <label for="contact-checkbox2">I'd like to help improve the products by joining the <a href="#">research group.</a></label>
+            </div>
+            <button type="submit" id="submit-button">Submit feedback</button>
+        </div>
+    </form>
+</body>
+</html>
